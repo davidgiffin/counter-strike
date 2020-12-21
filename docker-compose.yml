@@ -10,7 +10,7 @@ services:
         - steam_password=${STEAM_PASSWORD:-''}
         - amxmod_version=1.8.2
   server:
-    image: cs16-server:$IMAGE_TAG
+    image: cs16-server:latest
     build:
       context: .
       dockerfile: image/cs16-server/Dockerfile
